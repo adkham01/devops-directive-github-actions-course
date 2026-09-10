@@ -18,6 +18,6 @@ jobs:
           cache: "npm"
           cache-dependency-path: 04-advanced-features/caching/minimal-node-project/package-lock.json
       - name: Install dependencies
-        run: npm ci --prefer-offline --no-
+        run: npm ci --prefer-offline --no-audit
       - name: List first few modules
         run: ls -R node_modules | head
